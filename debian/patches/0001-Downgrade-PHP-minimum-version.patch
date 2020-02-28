@@ -1,0 +1,21 @@
+From: =?utf-8?b?T25kxZllaiBTdXLDvQ==?= <ondrej@sury.org>
+Date: Mon, 20 Jan 2020 23:40:34 +0100
+Subject: Downgrade PHP minimum version
+
+---
+ package.xml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/package.xml b/package.xml
+index 71dfe4d..c5ec070 100644
+--- a/package.xml
++++ b/package.xml
+@@ -151,7 +151,7 @@ Thu, Jan 16, 2020 - xdebug 2.9.1
+  <dependencies>
+   <required>
+    <php>
+-    <min>7.1.0</min>
++    <min>7.0.0</min>
+    </php>
+    <pearinstaller>
+     <min>1.9.1</min>

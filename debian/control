@@ -1,0 +1,40 @@
+Source: xdebug
+Section: php
+Priority: optional
+Maintainer: Debian PHP PECL Maintainers <team+php-pecl@tracker.debian.org>
+Uploaders: Martin Meredith <mez@debian.org>,
+           Lior Kaplan <kaplan@debian.org>,
+           Ondřej Surý <ondrej@debian.org>
+Build-Depends: debhelper (>= 9~),
+               dh-php (>= 0.33~),
+               php-all-dev (>= 17~)
+Standards-Version: 3.9.8
+Homepage: http://xdebug.org/
+Vcs-Browser: https://salsa.debian.org/php-team/pecl/xdebug
+Vcs-Git: https://salsa.debian.org/php-team/pecl/xdebug.git
+
+Package: php-xdebug
+Architecture: any
+Pre-Depends: php-common (>= 2:69~)
+Depends: ucf,
+         ${misc:Depends},
+         ${php:Depends},
+         ${shlibs:Depends}
+Provides: ${php:Provides}
+Description: Xdebug Module for PHP
+ The Xdebug extension helps you debugging your script by providing a lot of
+ valuable debug information. The debug information that Xdebug can provide
+ includes the following:
+ .
+    * stack traces and function traces in error messages with:
+       - full parameter display for user defined functions
+       - function name, file name and line indications
+       - support for member functions
+    * memory allocation
+    * protection for infinite recursions
+ .
+ Xdebug also provides:
+ .
+    * profiling information for PHP scripts
+    * script execution analysis
+    * capabilities to debug your scripts interactively with a debug client

@@ -1,0 +1,3 @@
+#!/usr/bin/make -f
+PECL_NAME_OVERRIDE=xdebug
+include /usr/share/dh-php/pkg-pecl.mk
